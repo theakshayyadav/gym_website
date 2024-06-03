@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@7.4.1/swiper-bundle.min.css" rel="stylesheet">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <header id="header" class="bg-gray-800 text-white fixed w-full top-0 z-50">
+        <nav class="container mx-auto p-4">
+            <ul class="flex justify-end space-x-4">
+                <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="relative bg-gray-100 text-center py-20 mt-16">
+        <div class="container mx-auto">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide relative">
+                        <img src="assets/image/wellness-health-lifestyle-workout-graphic-word.jpg" alt="Gym Image 1" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50">
+                            <h1 class="text-4xl font-bold text-white mb-4">Welcome to Our Gym</h1>
+                            <p class="text-xl text-white">Get fit, stay healthy!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide relative">
+                        <img src="assets/image/3d-gym-equipment.jpg" alt="Gym Image 2" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50">
+                            <h1 class="text-4xl font-bold text-white mb-4">Welcome to Our Gym</h1>
+                            <p class="text-xl text-white">Get fit, stay healthy!</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide relative">
+                        <img src="assets/image/woman-holding-weights-near-barbells.jpg" alt="Gym Image 3" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50">
+                            <h1 class="text-4xl font-bold text-white mb-4">Welcome to Our Gym</h1>
+                            <p class="text-xl text-white">Get fit, stay healthy!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-gray-200 py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">About Us</h2>
+            <!-- First row: Image then Information -->
+            <div class="flex flex-col md:flex-row items-center mb-8">
+                <img src="assets/kickboxing.jpg" alt="Gym Image 1" class="w-full md:w-1/2 h-auto mb-4 md:mb-0 md:mr-4">
+                <div class="text-lg">
+                    <p>"Unleash your strength and agility with our kickboxing classes."
+                        "Transform your body and mind through dynamic kicks and punches."
+                        "Experience the power of kickboxing in a supportive and motivating environment."
+                        "Join us and discover the ultimate cardio workout with a punch!"
+                        "Elevate your fitness routine with high-energy kickboxing sessions today!"</p>
+                </div>
+            </div>
+            <!-- Second row: Information then Image -->
+            <div class="flex flex-col md:flex-row items-center mb-8 md:flex-row-reverse">
+                <img src="assets/yoga.jpg" alt="Gym Image 2" class="w-full md:w-1/2 h-auto mb-4 md:mb-0 md:ml-4">
+                <div class="text-lg">
+                    <p>"Find your inner balance and peace through the ancient art of yoga."
+                        "Connect mind, body, and spirit with our transformative yoga classes."
+                        "Experience the serenity of yoga amidst serene surroundings."
+                        "Unlock your full potential with our expert instructors guiding you through every pose."
+                        "Embark on a journey of self-discovery and holistic well-being with our yoga community."</p>
+                </div>
+            </div>
+            <!-- Third row: Image then Information -->
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="assets/zumba.jpg" alt="Gym Image 3" class="w-full md:w-1/2 h-auto mb-4 md:mb-0 md:mr-4">
+                <div class="text-lg">
+                    <p>"Shake, shimmy, and sweat your way to fitness with our exhilarating Zumba classes!"
+                        "Join the party and unleash your inner dancer while torching calories."
+                        "Feel the rhythm, feel the beat, and let Zumba energize your workout routine."
+                        "Experience the joy of movement as you groove to infectious Latin and world rhythms."
+                        "Transform your workout into a dance-filled celebration with our dynamic Zumba sessions!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-gray-300 py-20">
+        <div class="container mx-auto flex flex-col md:flex-row">
+            <!-- Address -->
+            <div class="w-full md:w-1/2 p-4">
+                <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Our Address</h2>
+                <p class="text-lg">123 Gym Street<br>Fitness City, FT 12345<br>Phone: (123) 456-7890<br>Email: info@gymwebsite.com</p>
+            </div>
+            <!-- Contact Form -->
+            <div class="w-full md:w-1/2 p-4">
+                <h2 class="text-3xl font-bold mb-4 text-center md:text-left">Contact Us</h2>
+                <form id="contact-form" class="flex flex-col">
+                    <label for="name" class="mb-2">Name:</label>
+                    <input type="text" id="name" name="name" class="mb-4 p-2 border border-gray-400 rounded w-full">
+                    <label for="email" class="mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="mb-4 p-2 border border-gray-400 rounded w-full">
+                    <label for="message" class="mb-2">Message:</label>
+                    <textarea id="message" name="message" class="mb-4 p-2 border border-gray-400 rounded w-full"></textarea>
+                    <button type="submit" class="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2024 Gym Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@7.4.1/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+</body>
+</html>
